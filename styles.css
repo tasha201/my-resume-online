@@ -1,0 +1,86 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.portrait {
+  width: 200px;
+}
+
+.slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider .slide {
+  height: 100px;
+  width: 150px;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 150px;
+  z-index: 2;
+}
+
+.slider .slide-track {
+  animation: slide 30s linear infinite;
+  display: flex;
+  width: 1800px;
+}
+
+.slider .skill-img {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .skill-name {
+  text-align: center;
+  color: #0007;
+  font-weight: 500;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-900px);
+  }
+}
+
+.projects-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-project {
+  width: 171px;
+}
