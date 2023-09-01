@@ -230,7 +230,7 @@ h1 {
   height: 270px;
   padding: 5px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   /* box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px; */
 }
 
@@ -268,7 +268,7 @@ h1 {
 
 .project-image:hover {
   transform: scale(1.2);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .project-image img {
@@ -281,8 +281,26 @@ h1 {
   border: 1px solid #4671a6;
   color: #fff;
   font-size: 12px;
-  /* margin-bottom: 30px; */
   padding: 10px 15px;
   border-radius: 9px;
   text-decoration: none;
+}
+/*end of styling portfolio section */
+
+.footer-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  height: 100px;
+}
+
+.footer-icons img {
+  width: 20px;
+}
+
+footer:hover .footer-icons img {
+  width: 32px;
+  transition: all 1s ease-out;
 }
