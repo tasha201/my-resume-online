@@ -3,21 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div>
-        <span>Logo</span>
+      <div class="header-navigation">
+        <div class="logo-align">
+            <img src="images/github.png" alt="logo" class="header-logo" />
+            <span class="logo-text">tasha201</span>
+        </div>
         <nav>
-          <ul>
+          <ul class="nav-list">
             <li>Home</li>
             <li>Projects</li>
             <li>Contact me</li>
-            <li>
+            <!-- <li>
               <button>Download CV</button>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -26,10 +32,10 @@
     <main>
       <div class="container">
         <div class="about-section">
-          <p>Hi! I am</p>
+          <p class="hello-message">Hi! I am</p>
           <h1>Natalia Pavlyk</h1>
-          <h2>Web Developer, based in Mukachevo, Ukraine</h2>
-          <p>
+          <h2>Front-end Developer, based in Mukachevo, Ukraine</h2>
+          <p class="about-section-text">
             As a passionate and dedicated developer, I have experience in
             developing web projects, single-page applications, and multi-page
             websites. The scope of my expertise includes JavaScript, React,
@@ -37,7 +43,7 @@
           </p>
         </div>
         <div>
-          <img src="images/portrait.png" alt="portrait" class="portrait" />
+          <img src="images/portrait.jpg" alt="Natalia Pavlyk portrait" class="portrait" />
         </div>
       </div>
 
@@ -84,6 +90,28 @@
               <img src="images/figma.png" alt="Figma" class="skill-img" />
             </div>
             <div class="skill-name">Figma</div>
+          </div>
+          <div class="slide">
+            <div class="skill-img">
+              <img
+                src="images/tailwind-logo.png"
+                alt="Tailwind CSS"
+                class="skill-img"
+              />
+            </div>
+            <div class="skill-name">Tailwind CSS</div>
+          </div>
+          <div class="slide">
+            <div class="skill-img">
+              <img src="images/HTML5.png" alt="HTML" class="skill-img" />
+            </div>
+            <div class="skill-name">HTML</div>
+          </div>
+          <div class="slide">
+            <div class="skill-img">
+              <img src="images/css-3.png" alt="CSS" class="skill-img" />
+            </div>
+            <div class="skill-name">CSS</div>
           </div>
         </div>
       </div>
@@ -152,7 +180,9 @@
                 />
               </a>
             </div>
-            <a href="https://courageous-tanuki-ea33cb.netlify.app" class="button"
+            <a
+              href="https://courageous-tanuki-ea33cb.netlify.app"
+              class="button"
               >Learn more</a
             >
           </div>
@@ -164,10 +194,16 @@
             </div>
             <div class="project-image">
               <a href="https://rainbow-kangaroo-fabf04.netlify.app">
-                <img src="images/projects/dreamshare.png" alt="dreamshare landing page" class="img-fluid img-project" />
+                <img
+                  src="images/projects/dreamshare.png"
+                  alt="dreamshare landing page"
+                  class="img-fluid img-project"
+                />
               </a>
             </div>
-            <a href="https://rainbow-kangaroo-fabf04.netlify.app" class="button">Learn more</a>
+            <a href="https://rainbow-kangaroo-fabf04.netlify.app" class="button"
+              >Learn more</a
+            >
           </div>
 
           <div class="project-item">
@@ -177,10 +213,16 @@
             </div>
             <div class="project-image">
               <a href="https://gorgeous-swan-fdaaeb.netlify.app">
-                <img src="images/projects/bose.png" alt="Bose landing page" class="img-fluid img-project" />
+                <img
+                  src="images/projects/bose.png"
+                  alt="Bose landing page"
+                  class="img-fluid img-project"
+                />
               </a>
             </div>
-            <a href="https://gorgeous-swan-fdaaeb.netlify.app" class="button">Learn more</a>
+            <a href="https://gorgeous-swan-fdaaeb.netlify.app" class="button"
+              >Learn more</a
+            >
           </div>
         </div>
       </div>

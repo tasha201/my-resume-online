@@ -1,13 +1,109 @@
-*,
+/* *,
 :after,
 :before {
   box-sizing: border-box;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+/* styling header */
+.header-navigation {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  background-color: #dbdcdd;
+  margin-bottom: 40px;
+}
+
+.logo-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 45px;
+}
+
+.logo-text {
+  font-size: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-list li {
+  font-size: 20px;
+}
+
+.nav-list li:hover {
+  color: #fa8072;
+}
+/* end of styling header */
+
+/* styling about-section */
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-section {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hello-message {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.about-section h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #6d6c6c;
+  font-weight: 400;
+}
+
+.about-section-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
 }
 
 .portrait {
-  width: 200px;
-}
+  height: 240px;
+  border-radius: 8px;
 
+}
+/* end of styling about-section */
+
+/* styling slider section */
 .slider {
   background: white;
   height: 100px;
@@ -21,18 +117,18 @@
   width: 150px;
 }
 
-.slider::before {
+/* .slider::before {
   left: 0;
   top: 0;
-}
+} */
 
-.slider::after {
+/* .slider::after {
   right: 0;
   top: 0;
   transform: rotate(180deg);
-}
+} */
 
-.slider::before,
+/* .slider::before,
 .slider::after {
   background: linear-gradient(
     to right,
@@ -44,7 +140,7 @@
   position: absolute;
   width: 150px;
   z-index: 2;
-}
+} */
 
 .slider .slide-track {
   animation: slide 30s linear infinite;
