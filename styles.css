@@ -1,16 +1,12 @@
-/* *,
+*,
 :after,
 :before {
-  box-sizing: border-box;
-} */
-* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  /* font-family: "Roboto", sans-serif; */
   font-family: "Montserrat", sans-serif;
   color: #333333;
 }
@@ -99,7 +95,7 @@ h1 {
 .about-section h2 {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #6d6c6c;
+  color: #4671a6;
   font-weight: 300;
 }
 
@@ -119,7 +115,7 @@ h1 {
 
 /* styling slider section */
 .slider {
-  background: white;
+  background: #ffffff;
   height: 100px;
   margin: auto;
   overflow: hidden;
@@ -131,33 +127,33 @@ h1 {
   width: 150px;
 }
 
-/* .slider::before {
+.slider::before {
   left: 0;
   top: 0;
-} */
+}
 
-/* .slider::after {
+.slider::after {
   right: 0;
   top: 0;
   transform: rotate(180deg);
-} */
+}
 
-/* .slider::before,
+.slider::before,
 .slider::after {
   background: linear-gradient(
     to right,
-    rgb(255, 255, 255) 0%,
-    rgba(255, 255, 255, 0) 100%
+    #ffffff 0%,
+    #ffffff00 100%
   );
   content: "";
   height: 100px;
   position: absolute;
-  width: 150px;
+  width: 200px;
   z-index: 2;
-} */
+}
 
 .slider .slide-track {
-  animation: slide 30s linear infinite;
+  animation: slide 40s linear infinite;
   display: flex;
   width: 1800px;
 }
@@ -199,6 +195,7 @@ h1 {
   text-align: center;
   padding: 50px 0;
   margin: 50px auto 0;
+  color: #4671a6;
 }
 /*end of styling slogan section */
 
@@ -244,7 +241,7 @@ h1 {
 }
 
 .project-head h4 {
-  color: #4671a6;
+  /* color: #4671a6; */
   font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
@@ -288,9 +285,7 @@ h1 {
 }
 
 .learn-button:hover {
-  background: linear-gradient(to bottom,
-        #4671a698,
-        #4671a6);
+  background: linear-gradient(to bottom, #4671a698, #4671a6);
 }
 /*end of styling portfolio section */
 
@@ -308,16 +303,19 @@ footer {
   height: 80px;
 }
 
- .fa-brands, .fa-solid {
+.fa-brands,
+.fa-solid {
   color: #4671a0;
 }
 
-footer:hover .fa-brands, footer:hover .fa-solid {
+footer:hover .fa-brands,
+footer:hover .fa-solid {
   transform: scale(1.5);
   transition: all 500ms ease-out;
 }
 
-.fa-brands:hover, .fa-solid:hover {
+.fa-brands:hover,
+.fa-solid:hover {
   color: #333333;
 }
 
