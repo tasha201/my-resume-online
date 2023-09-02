@@ -47,7 +47,7 @@ body {
 }
 
 .logo-text:hover {
-  color: #4671a6;
+  color: #4671a698;
 }
 
 .nav-list {
@@ -64,7 +64,7 @@ body {
 }
 
 .nav-list li:hover {
-  color: #4671a6;
+  color: #4671a698;
 }
 /* end of styling header */
 
@@ -230,7 +230,7 @@ h1 {
   height: 270px;
   padding: 5px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   /* box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px; */
 }
 
@@ -244,15 +244,15 @@ h1 {
 }
 
 .project-head h4 {
-  color: #212529;
+  color: #4671a6;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
 }
 
 .project-head p {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .project-image {
@@ -267,7 +267,7 @@ h1 {
 }
 
 .project-image:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition-duration: 0.5s;
 }
 
@@ -277,15 +277,27 @@ h1 {
 }
 
 .learn-button {
-  background-color: #4671a6;
-  border: 1px solid #4671a6;
+  background-color: #4671a6b3;
+  border: 1px solid #4671a6b3;
   color: #fff;
   font-size: 12px;
+  font-weight: 500;
   padding: 10px 15px;
   border-radius: 9px;
   text-decoration: none;
 }
+
+.learn-button:hover {
+  background: linear-gradient(to bottom,
+        #4671a698,
+        #4671a6);
+}
 /*end of styling portfolio section */
+
+/*styling footer section */
+footer {
+  margin-top: 20px;
+}
 
 .footer-icons {
   display: flex;
@@ -293,14 +305,20 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #f8f9fa;
-  height: 100px;
+  height: 80px;
 }
 
-.footer-icons img {
-  width: 20px;
+ .fa-brands, .fa-solid {
+  color: #4671a0;
 }
 
-footer:hover .footer-icons img {
-  width: 32px;
-  transition: all 1s ease-out;
+footer:hover .fa-brands, footer:hover .fa-solid {
+  transform: scale(1.5);
+  transition: all 500ms ease-out;
 }
+
+.fa-brands:hover, .fa-solid:hover {
+  color: #333333;
+}
+
+/*end of styling footer section */
