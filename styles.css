@@ -273,6 +273,10 @@ h1 {
   height: auto;
 }
 
+.project-image .add-to-cart-img{
+  max-width: 87%;
+}
+
 .learn-button {
   background-color: #4671a6b3;
   border: 1px solid #4671a6b3;
